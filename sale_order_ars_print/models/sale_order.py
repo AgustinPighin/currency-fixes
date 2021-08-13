@@ -12,15 +12,7 @@ class SaleOrder(models.Model):
 
     _inherit = 'sale.order'
 
-    print_curr_amount_untaxed = fields.Monetary(string='Untaxed Amount', store=True, readonly=True, compute='_amount_curr_all', tracking=True)
-    print_curr_amount_tax     = fields.Monetary(string='Taxes', store=True, readonly=True, compute='_amount_curr_all')
-    print_curr_amount_total   = fields.Monetary(string='Total', store=True, readonly=True, compute='_amount_curr_all')
     print_currency_id         = fields.Many2one("res.currency",  string="Currency", readonly=True, required=True,compute='_get_currency')
-    amount_by_group_curr      = fields.Binary(string="Tax amount by group", help="type: [(name, amount, base, formated amount, formated base)]")
-
-    print_currency_rate       = fields.Float(copy=False, digits=(16, 6), readonly=True, string="Currency Rate")
-
-    #print_currency_id = fields.Many2one("res.currency", related='pricelist_id.currency_id', string="Currency", readonly=True, required=True)
 
     def _get_currency(self):
         self.ensure_one()

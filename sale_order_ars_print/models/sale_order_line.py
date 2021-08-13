@@ -7,11 +7,11 @@ class SaleOrderLine(models.Model):
 
     _inherit = 'sale.order.line'
 
-    print_curr_price_unit = fields.Float('Unit Price', required=True, digits='Product Price', default=0.0)
+"""    print_curr_price_unit = fields.Float('Unit Price', required=True, digits='Product Price', default=0.0)
 
     print_curr_price_subtotal = fields.Float(compute='_compute_curr_amount', digits='Product Price', default=0.0, string='Subtotal', readonly=True, store=True)
     print_curr_price_tax      = fields.Float(compute='_compute_curr_amount', digits='Product Price', default=0.0, string='Total Tax', readonly=True, store=True)
-    print_curr_price_total    = fields.Float(compute='_compute_curr_amount', digits='Product Price', default=0.0,  string='Total', readonly=True, store=True)
+    print_curr_price_total    = fields.Float(compute='_compute_curr_amount', digits='Product Price', default=0.0,  string='Total', readonly=True, store=True)"""
 
 """    @api.depends('product_uom_qty', 'discount', 'price_unit', 'tax_id')
     def _compute_curr_amount(self):
