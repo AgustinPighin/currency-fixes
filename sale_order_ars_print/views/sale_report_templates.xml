@@ -48,7 +48,7 @@
                                     t-options='{"widget": "monetary", "display_currency": doc.print_currency_id}'/>-->
                             </td>
                         </tr>
-                        <t t-foreach="doc.amount_by_group_curr" t-as="amount_by_group">
+                        <t t-foreach="doc.amount_by_group" t-as="amount_by_group">
                             <tr style="">
                                 <t t-if="amount_by_group[5] == 1 and doc.print_curr_amount_untaxed == amount_by_group[2]">
                                     <td name="td_amount_by_group_label_3">

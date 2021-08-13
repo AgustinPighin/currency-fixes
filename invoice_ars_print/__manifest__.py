@@ -19,7 +19,7 @@
 ##############################################################################
 {
     'name': 'Invoice Print Ars',
-    'version': '13.0.1.1.01',
+    'version': '13.0.1.1.2',
     'category': 'Accounting',
     'sequence': 14,
     'author': 'Agustin Pighin',

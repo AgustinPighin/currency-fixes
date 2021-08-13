@@ -19,7 +19,7 @@
 ##############################################################################
 {
     'name': 'Sale Order Print Ars',
-    'version': '13.0.1.1.0',
+    'version': '13.0.1.1.1',
     'category': 'Accounting',
     'sequence': 14,
     'author': 'Agustin Pighin',
